@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="horse-track">
+      <div>
+        <img
+          class="image_1"
+          style="left: 0px"
+          src="images/horse_1.jpeg"
+          alt="horse 1"
+        />
+      </div>
+      <div>
+        <img
+          class="image_2"
+          style="left: 0px"
+          src="images/horse_2.jpg"
+          alt="horse 2"
+        />
+      </div>
+      <div>
+        <img
+          class="image_3"
+          style="left: 0px"
+          src="images/horse_3.jpg"
+          alt="horse 3"
+        />
+      </div>
+      <div class="line"></div>
+    </section>
+    <button class="button-run" type="button" onclick="runHorses()">
+      Start
+    </button>
+    <div class="bid-container">
+      <select name="horses" id="horses-selection">
+        <option value="horse1">horse1</option>
+        <option value="horse2">horse2</option>
+        <option value="horse3">horse3</option>
+      </select>
+      <label for="bet">Amount:</label>
+			<input type="number" id="bet" min="50" value="0" step="10">
+			<button id="submit" onclick="setDeposit()">Deposit</button>
+    
+    </div>
+    <div class="wallet">
+      <h2>Wallet:</h2>
+      <h2 id="earnings">200</h2>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
